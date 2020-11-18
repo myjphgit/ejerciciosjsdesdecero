@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript</title>
+	<link rel="stylesheet" href="EstilosEjer1.css">
+
+</head>
+<body>
+	<h1 class="clase1"> Bienvenido a Javascript</h1>
+	<script>
+	// comentario de una linea
+	/* comentario de varias lineas */ 	
+
+	/* Generar un programa que pida ingresar 2 numeros. 
+	se pide:
+
+	1) suma
+	2) resta
+	3) multiplicacion */
+
+	//1) Declaracion de variables
+	var nro1, nro2; // variables de ingreso de datos
+	var suma=0; // variables para calculos
+
+	/* nro1=10;
+	nro2="hola";
+	suma= true;
+
+	alert("Valor de Nro1:" + nro1);
+	alert("Valor de Nro2:" + nro2);
+	alert("Valor de suma:" + suma); */ 
+
+	// 2) Ingreso de Datos
+
+	/* conversores
+
+	parseInt --> para numeros enteros
+	parseFloat --> para numeros con decimales 
+	*/ 
+
+	nro1=parseInt(prompt("Ingrese un valor para Nro1:" , 10));
+	nro2=parseInt(prompt("Ingrese un valor para Nro2:" , 20));
+
+	//3) Hacer calculos
+
+	suma=nro1+nro2;
+
+	//4) Mostrar resultados
+
+	alert("El resultado de la suma es: " + suma);
+	document.write("El resultado de la suma es: " + suma);
+
+
+
+
+
+	</script>
+
+</body>
+</html>

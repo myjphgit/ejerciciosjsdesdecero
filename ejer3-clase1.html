@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="EstilosEjer1.css">
+	<title>Erjcicio 3 jS</title>
+</head>
+<body>
+	<h1 class="clase1"> Ejercicio 3 de Javascript </h1>
+	<script>
+		/* Generar un programa que pida ingresar:
+		- nombre del producto
+		- cantidad vendida
+		- precio unitario
+
+		se pide:
+		1) subtotal
+		2) si el subtotal es mayor o igual a 100, que realice el 10% sino 5%
+		3) total gral
+		4) Iva 21%
+		5) Total mas iva */
+
+		/* Estructura condicional /if
+
+		if(condicion)
+		{
+			sentenvecias verdaderas;
+		}
+		else 
+		{
+			sentencias falsas;
+		} */
+
+			var edad; 
+
+		edad=parseInt(prompt("Ingrese la edad:" , 22 ));
+
+		if(edad>=18)
+		{
+			document.write("Usted es mayor - porque tiene " + edad + " años" + "<br>");
+		}
+		else {
+			document.write("Usted es menor - porque tiene " + edad + "años" + "<br>");
+		}
+
+	
+
+		// 1) Subtotal
+
+		var nombrep;
+		var cantidadv;
+		var preciou;
+		var subtotal=0;
+
+
+
+		cantidadv=parseInt(prompt("Ingresar los productos vendidos" , 150));
+
+		preciou=parseInt(prompt("Ingresar precio producto" , 1500));
+
+		subtotal=cantidadv*preciou;
+	document.write("El resultado del subtotal es: " + subtotal + "<br>");
+
+
+		// 2) Subtotal si es mayor o igual a 100 o si es menor.
+
+
+	if(subtotal>=100)
+	{
+		document.write("El 10% del subtotal es: " + ((subtotal*10)/100) + "<br>");
+	}
+	else {
+		document.write("El 5% del subtotal es: " + ((subtotal*5)/100) + "<br>");
+	}
+
+		// 3) Total general
+
+		var stock;
+		var totalgral=0;
+
+		stock=parseInt(prompt("Ingresar la cantidad total de productos " , 200));
+
+		totalgral=stock*preciou;
+		document.write("El valor del total general de productos es: " + totalgral + "<br>");
+
+
+		// 4) Iva 21%
+
+		var iva=0;
+
+		iva=(subtotal*21)/100;
+		document.write("El valor de la carga impositiva IVA es: " + iva + "<br>");
+
+		// 5)  Total mas iva
+
+		var tconiva=0;
+
+		tconiva=subtotal+iva;
+		document.write("El valor del total mas iva es: " + tconiva + "<br>");
+
+
+
+
+		
+
+
+
+	</script>
+	
+
+</body>
+</html>

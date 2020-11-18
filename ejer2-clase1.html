@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="stylesheet" href="EstilosEjer1.css">
+	<title>Erjcicio 2 jS</title>
+
+</head>
+<body>
+	<h1 class="clase1"> Ejercicio 2 de Javascript</h1>
+	<script>
+		/* Generar un programa que pida ingresar 4 variables numericas decimales (a,b,c,d)
+		Se pide:
+		1) suma de las 4 variables.
+		2) promedio.
+		3) porcentaje de a sobre b.
+		4) porcentaje de a sobre la suma de las variables */
+
+		var a,b,c,d;
+		var suma=0;
+		var promedio=0;
+		var porcentaje=0;
+		var porcentajeb=0;
+
+		a=parseFloat(prompt("Ingrese un valor para A:" , 1.1));
+		b=parseFloat(prompt("Ingrese un valor para B:" , 2.2));
+		c=parseFloat(prompt("Ingrese un valor para C:" , 3.3));
+		d=parseFloat(prompt("Ingrese un valor para D:" , 4.4));
+
+		
+
+		suma=a+b+c+d;
+
+		alert("El resultado de la suma es: " + suma);
+	document.write("El resultado de la suma es: " + suma + "<br>");
+
+	promedio=suma/4;
+
+	alert("El resultado del promedio es: " + promedio);
+	document.write("El resultado del promedio: " + promedio + "<br>");
+
+	porcentaje=(a*100)/b;
+
+	alert("El resultado del porcentaje es: " + porcentaje);
+	document.write("El resultado del porcentaje: " + porcentaje + "%" + "<br>");
+
+	porcentajeb= (a*100)/(suma);
+
+	alert("El resultado del porcentajeb es: " + porcentajeb);
+	document.write("El resultado del porcentajeb: " + porcentajeb + "%" + "<br>");
+
+
+
+
+
+	</script>
+
+</body>
+</html>
